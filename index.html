@@ -39,7 +39,7 @@
   </div>
   
 <nav class="site-nav" aria-label="Main navigation">
-  <ul><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li><a href="/service-areas/">Service Areas</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/our-process/">Our Process</a></li><li><a href="/insured-and-bonded/">Insured & Bonded</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/request-a-quote/">Get a Quote</a></li></ul>
+  <ul><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li><a href="/service-areas/">Service Areas</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/our-process/">Our Process</a></li><li><a href="/insured-and-bonded/">Insured & Bonded</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/blog/">Blog</a></li><li><a href="/request-a-quote/">Get a Quote</a></li></ul>
 </nav>
 </header>
 
@@ -63,30 +63,14 @@
     
 <div class="quote-form-card">
   <h2>Free Quote — Response by Next Business Day</h2>
-  <form action="/request-a-quote/" method="post" data-quote-form>
+  <form action="/request-a-quote/" method="get">
     <label for="qf-name">Your name</label>
     <input type="text" id="qf-name" name="name" placeholder="Dr. Smith / Office Manager" required>
-    <label for="qf-facility">Facility name</label>
-    <input type="text" id="qf-facility" name="facility" placeholder="Houlton Family Clinic">
     <label for="qf-phone">Phone</label>
     <input type="tel" id="qf-phone" name="phone" placeholder="(866) 958-8773" required>
-    <label for="qf-email">Email</label>
-    <input type="email" id="qf-email" name="email" placeholder="you@yourclinic.com">
-    <label for="qf-zip">ZIP code</label>
-    <input type="text" id="qf-zip" name="zip" placeholder="54082" pattern="\d{5}(-\d{4})?" required>
-    <label for="qf-type">Facility type</label>
-    <select id="qf-type" name="type">
-      <option value="">— Select —</option>
-      <option>Medical / Primary Care</option>
-      <option>Dental Practice</option>
-      <option>Specialty Clinic</option>
-      <option>Urgent Care</option>
-      <option>Other Healthcare</option>
-    </select>
     <label for="qf-sqft">Approx. square footage</label>
     <input type="text" id="qf-sqft" name="sqft" placeholder="e.g. 2,400 sq ft">
-    <button type="submit" class="btn-primary">Request My Free Quote</button>
-    <p class="form-status" role="status" aria-live="polite"></p>
+    <button type="submit" class="btn-primary">Start My Free Quote</button>
     <p class="form-note">We reply by next business day. Mon–Fri 8:30am–5:00pm.</p>
   </form>
 </div>
@@ -179,8 +163,8 @@
   <div class="footer-bottom">
     <span class="footer-note">&copy; Houlton Medical Office Cleaning. Serving Houlton, WI and surrounding communities within 25 miles. Not affiliated with any other cleaning service website.</span>
     <span class="footer-note">(866) 958-8773 &nbsp;|&nbsp; ops@thequotemasters.com</span>
+    <span class="footer-note">Built and Maintained by <a href="https://infin8content.com/" style="color:inherit;text-decoration:underline;">Infin8Content</a></span>
   </div>
 </footer>
-<script src="/quote-form.js"></script>
 </body>
 </html>

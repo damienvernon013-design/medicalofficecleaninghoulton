@@ -374,3 +374,141 @@ body {
   .header-contact { text-align: center; }
   .hero h1 { font-size: 1.5rem; }
 }
+
+/* Quote wizard */
+.wiz-progress { margin-bottom: 20px; }
+.wiz-progress-bar {
+  display: block;
+  width: 100%;
+  height: 6px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.wiz-progress-fill {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.25s ease;
+}
+.wiz-progress-label { font-size: 0.78rem; color: #a8cfc0; margin-top: 8px; }
+
+.wiz-fieldset { border: none; margin-bottom: 20px; }
+.wiz-legend { font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 6px; display: block; }
+.wiz-hint { font-size: 0.82rem; color: #a8cfc0; margin-bottom: 14px; }
+
+.wiz-options { display: flex; flex-direction: column; gap: 8px; }
+.wiz-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 2px;
+  background: rgba(255,255,255,0.06);
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.wiz-option:hover { background: rgba(255,255,255,0.12); }
+.wiz-option.is-selected {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.wiz-option-input { flex-shrink: 0; accent-color: var(--accent); }
+.wiz-option-label { font-size: 0.9rem; color: #fff; }
+
+.wiz-slot {
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 2px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+.wiz-slot-title { font-size: 0.92rem; color: #fff; margin-bottom: 10px; }
+.wiz-slot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.wiz-slot-grid .form-row { margin-bottom: 0; }
+
+.form-row { margin-bottom: 12px; }
+.form-row label {
+  display: block;
+  font-size: 0.82rem;
+  margin-bottom: 4px;
+  color: #a8cfc0;
+}
+.form-row input,
+.form-row select,
+.form-row textarea {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  border-radius: 2px;
+  font-size: 0.9rem;
+}
+.form-row select option { background: var(--primary); }
+.form-row textarea { min-height: 72px; resize: vertical; }
+
+.wiz-review-heading { font-size: 1.1rem; color: #fff; margin-bottom: 16px; }
+.wiz-review-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 2px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+}
+.wiz-review-card h4 { color: #fff; font-size: 0.92rem; margin-bottom: 10px; }
+.wiz-review-list { display: grid; grid-template-columns: 1fr 1.4fr; gap: 6px 12px; }
+.wiz-review-list dt { font-size: 0.78rem; color: #a8cfc0; }
+.wiz-review-list dd { font-size: 0.88rem; color: #fff; }
+
+.wiz-terms {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: #a8cfc0;
+  margin: 16px 0;
+  cursor: pointer;
+}
+.wiz-terms input { flex-shrink: 0; margin-top: 3px; accent-color: var(--accent); }
+
+.wiz-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 8px;
+}
+.wiz-nav .btn-primary { width: auto; padding: 12px 28px; }
+.wiz-nav-back {
+  padding: 12px 20px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 2px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.wiz-nav-back:hover { background: rgba(255,255,255,0.1); }
+.wiz-nav button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.wiz-done { text-align: center; padding: 20px 0; }
+.wiz-done h2 { color: #fff; margin-bottom: 12px; }
+.wiz-done p { color: #a8cfc0; margin-bottom: 12px; }
+.wiz-done-list { list-style: none; margin: 16px 0; text-align: left; }
+.wiz-done-list li {
+  padding: 10px 14px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 2px;
+  margin-bottom: 8px;
+  font-size: 0.88rem;
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .wiz-slot-grid { grid-template-columns: 1fr; }
+  .wiz-review-list { grid-template-columns: 1fr; }
+}

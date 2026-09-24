@@ -39,7 +39,7 @@
   </div>
   
 <nav class="site-nav" aria-label="Main navigation">
-  <ul><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li><a href="/service-areas/">Service Areas</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/our-process/">Our Process</a></li><li><a href="/insured-and-bonded/">Insured & Bonded</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/request-a-quote/">Get a Quote</a></li></ul>
+  <ul><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li><a href="/service-areas/">Service Areas</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/our-process/">Our Process</a></li><li><a href="/insured-and-bonded/">Insured & Bonded</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/blog/">Blog</a></li><li><a href="/request-a-quote/">Get a Quote</a></li></ul>
 </nav>
 </header>
 <div class="breadcrumb"><div class="breadcrumb-inner"><a href="Home">/</a> &rsaquo; /contact/</div></div>
@@ -68,7 +68,15 @@
     <h3>Call or Request a Quote</h3>
     <a href="tel:+18669588773" class="sidebar-phone">(866) 958-8773</a>
     <p style="font-size:0.82rem;color:var(--text-muted);">Mon–Fri 8:30am–5:00pm</p>
-    <a href="/request-a-quote/" class="btn-primary" style="margin-top:12px;">Online Quote Form</a>
+    <form action="/request-a-quote/" method="get" style="margin-top:12px;">
+      <label for="cf-name" style="display:block;font-size:0.82rem;margin-bottom:4px;color:var(--text-muted);">Your name</label>
+      <input type="text" id="cf-name" name="name" placeholder="Dr. Smith / Office Manager" required style="width:100%;padding:9px 12px;border:1px solid var(--border);border-radius:2px;font-size:0.9rem;margin-bottom:10px;">
+      <label for="cf-phone" style="display:block;font-size:0.82rem;margin-bottom:4px;color:var(--text-muted);">Phone</label>
+      <input type="tel" id="cf-phone" name="phone" placeholder="(866) 958-8773" required style="width:100%;padding:9px 12px;border:1px solid var(--border);border-radius:2px;font-size:0.9rem;margin-bottom:10px;">
+      <label for="cf-sqft" style="display:block;font-size:0.82rem;margin-bottom:4px;color:var(--text-muted);">Approx. square footage</label>
+      <input type="text" id="cf-sqft" name="sqft" placeholder="e.g. 2,400 sq ft" style="width:100%;padding:9px 12px;border:1px solid var(--border);border-radius:2px;font-size:0.9rem;margin-bottom:12px;">
+      <button type="submit" class="btn-primary">Start My Free Quote</button>
+    </form>
   </div>
   <div class="sidebar-card">
     <h3>Services</h3>
@@ -115,6 +123,7 @@
   <div class="footer-bottom">
     <span class="footer-note">&copy; Houlton Medical Office Cleaning. Serving Houlton, WI and surrounding communities within 25 miles. Not affiliated with any other cleaning service website.</span>
     <span class="footer-note">(866) 958-8773 &nbsp;|&nbsp; ops@thequotemasters.com</span>
+    <span class="footer-note">Built and Maintained by <a href="https://infin8content.com/" style="color:inherit;text-decoration:underline;">Infin8Content</a></span>
   </div>
 </footer>
 </body>
